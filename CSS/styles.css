@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Anonymous Pro";
+    height: 2922px;
+}
+
+header, section, footer{
+    width: 100%;
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 80px;
+    background-color: #F5F5F5;
+    box-shadow: 0px -8px 40.7px #000000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+.hello_section{
+    z-index: 1;
+    height: 594px;
+    padding-left: 25vw;
+    padding-top: 62px;
+    background: #4f4f4f;
+    background: linear-gradient(60deg, rgba(79, 79, 79, 1) 0%, rgba(247, 247, 247, 1) 58%);
+}
+
+.hello_content{
+    height: 419px;
+    width: 47.03vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-top: 81px;
+}
+
+.hello_word{
+    font-size: 96px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: -10px 10px 11px rgba(0, 0, 0, 49%);
+}
+
+.hello_text{
+    display: flex;
+    flex-direction: column;
+    width: 737px;
+    height: 126px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    box-shadow: -35px 31px 59px rgba(0, 0, 0, 50%);
+    padding-top: 39px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+.hello_text p{
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 163px;
+    background-color: #F5F5F5;
+}
+
+.contacts{
+    display: grid;
+    align-content: space-between;
+    width: 416px;
+    height: 119px;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.contacts div{
+    display: flex;
+    align-items: center;
+}
+
+.contacts div img{
+    height: 39px;
+    width: 39px;
+}
+
+.contacts div p{
+    margin-left: 17px;
+}

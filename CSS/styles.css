@@ -40,12 +40,14 @@ header{
 
 
 .hello_section{
+    position: relative;
     z-index: 1;
     height: 594px;
     padding-left: 25vw;
     padding-top: 62px;
     background: #4f4f4f;
     background: linear-gradient(60deg, rgba(79, 79, 79, 1) 0%, rgba(247, 247, 247, 1) 58%);
+    box-shadow: 0px -9px 25px #000000;
 }
 
 .hello_content{
@@ -87,6 +89,12 @@ header{
 
 
 
+
+
+.photos_section{
+    height: 2085px;
+    background: linear-gradient(43deg, rgb(82, 82, 82),rgb(255, 255, 255));
+}
 
 
 

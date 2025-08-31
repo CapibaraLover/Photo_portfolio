@@ -72,18 +72,27 @@ header{
 
 /* мобильный hello */
 @media (max-width: 980px){
+    .hello_content{
+        width: 90%;
+    }
 }
 
 /* десктопный hello */
 @media (min-width: 980px){
+    .hello_content{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+    }
 }
 
 .hello_content{
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

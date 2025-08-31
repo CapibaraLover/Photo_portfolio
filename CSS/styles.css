@@ -128,7 +128,7 @@ header{
     padding: 72px 50px;
 }
 
-.photos_grid{
+/* .photos_grid{
     display: grid;
     height: 1666.9811320752px;
     grid-template-columns: auto auto;
@@ -157,7 +157,7 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.27);
     backdrop-filter: blur(8.8px);
-}
+} */
 
 .frame_info p{
     height: 48px;

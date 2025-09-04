@@ -23,6 +23,8 @@ header, section, footer{
     height: 50%;
 }
 
+/* общий header */
+
 header{
     position: relative;
     z-index: 2;
@@ -61,7 +63,7 @@ header{
 
 
 
-
+/* Общий hello */
 .hello_section{
     position: relative;
     z-index: 1;
@@ -70,10 +72,35 @@ header{
     box-shadow: 0px -9px 25px #000000;
 }
 
+.hello_content{
+    margin-top: 5%;
+    margin-bottom: 9%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+
 /* мобильный hello */
 @media (max-width: 980px){
     .hello_content{
         width: 90%;
+    }
+    .hello_word{
+        font-size: 20vw;
+        letter-spacing: 1vw;
+        font-weight: bold;
+        text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 49%);
+    }
+    .hello_text p{
+        font-size: 6vw;
+        text-align: center;
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+        margin-left: 3vmin;
+        margin-right: 3vmin;
     }
 }
 
@@ -86,26 +113,27 @@ header{
         align-items: center;
         gap: 3vw;
     }
+    .hello_word{
+        font-size: 10vw;
+        letter-spacing: 1vw;
+        font-weight: bold;
+        text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 49%);
+    }
+    .hello_text p{
+        font-size: 2.5vw;
+        text-align: center;
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+        margin-left: 3vmin;
+        margin-right: 3vmin;
+    }
+
+
 }
 
-.hello_content{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3vw;
-}
 
 
-.hello_word{
-    font-size: 10vw;
-    letter-spacing: 1vw;
-    font-weight: bold;
-    text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 49%);
-}
+
 
 .hello_text{
     display: flex;
@@ -117,14 +145,6 @@ header{
     box-shadow: -3.5vw 3.1vw 6vw rgba(0, 0, 0, 50%);
 }
 
-.hello_text p{
-    font-size: 2.5vw;
-    text-align: center;
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
-    margin-left: 3vmin;
-    margin-right: 3vmin;
-}
 
 
 
@@ -184,21 +204,25 @@ header{
 
 
 
+
+
 footer{
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    height: 163px;
+    height: 15vh;
     background-color: #F5F5F5;
+    padding-top: 5%;
+}
+.contacts{
+    
+    background-color: red;
 }
 
-.contacts{
+/* .contacts{
     display: grid;
     align-content: space-between;
-    width: 100px;
-    height: 50px;
-    padding: 15px;
-    font-size: 5px;
+    width: 9.25%;
+    height: 4.62vh ;
+    padding: 1.4vh;
+    font-size: 200%;
 }
 
 .contacts div{
@@ -212,5 +236,24 @@ footer{
 }
 
 .contacts div p{
-    margin-left: 17px;
+    margin-left: 1.5px;
 }
+
+.contacts div img{
+        height: 0.9vh;
+        width: 0.9vh;
+}
+ */
+/* Мобильный footer */
+/* @media (max-width: 980px){
+    footer{
+        height: 20vh;
+    }
+} */
+/* Десктопный footer */
+/* @media (min-width: 980px){
+    footer{
+        height: 15vh;
+    }
+
+} */

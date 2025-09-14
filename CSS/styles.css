@@ -23,8 +23,6 @@ header, section, footer{
     height: 50%;
 }
 
-/* общий header */
-
 header{
     position: relative;
     z-index: 2;
@@ -59,11 +57,6 @@ header{
     }
 }
 
-
-
-
-
-/* Общий hello */
 .hello_section{
     position: relative;
     z-index: 1;
@@ -131,10 +124,6 @@ header{
 
 }
 
-
-
-
-
 .hello_text{
     display: flex;
     flex-direction: column;
@@ -145,70 +134,147 @@ header{
     box-shadow: -3.5vw 3.1vw 6vw rgba(0, 0, 0, 50%);
 }
 
-
-
-
-
-
-
 .photos_section{
-    height: auto;
     background: linear-gradient(43deg, rgb(82, 82, 82),rgb(255, 255, 255));
-    padding: 72px 50px;
+    padding: 5vw  4%;
 }
 
-.photos_grid{
-    display: grid;
-    height: 1666.9811320752px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 455.6603773584px 455.6603773584px 455.6603773584px 455.6603773584px;
-    row-gap: 150px;
-    justify-content: space-between;
+/* мобильный photos_section */
+@media (max-width: 980px){
+    .photos_section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos_grid{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 15vh;
+        justify-content: space-between;
+    }
+
+    .photos_frame{
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        box-shadow: 0px 3.1vw 6vw rgba(0, 0, 0, 50%);
+    }
+
+    .frame_info{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(8.8px);
+    }
+
+    .frame_info p{
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 3vw;
+        letter-spacing: 5%;
+    }
+
+    .photos_frame img{
+        width: 50%;
+    }
 }
 
-.photos_frame{
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    width: 700px;
-    height: 455.6603773584px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 48px rgba(0, 0, 0, 45%);
+
+@media (min-width: 980px) and (max-width: 1560px){
+    .photos_section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos_grid{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 15vh;
+        justify-content: space-between;
+    }
+
+    .photos_frame{
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        box-shadow: 0px 3.1vw 6vw rgba(0, 0, 0, 50%);
+    }
+
+    .frame_info{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(8.8px);
+    }
+    
+    .frame_info p{
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 2vw;
+        letter-spacing: 5%;
+    }
+
+    .photos_frame img{
+        width: 50%;
+    }
 }
 
-.frame_info{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    height: 94px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.27);
-    backdrop-filter: blur(8.8px);
+/* десктопный photos_section */
+@media (min-width: 1560px){
+    .photos_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 9%;
+        row-gap: 15vh;
+        justify-content: space-between;
+    }
+    
+    .photos_frame{
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        box-shadow: 0px 3.1vw 6vw rgba(0, 0, 0, 50%);
+    }
+
+    .frame_info{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(8.8px);
+    }
+
+    .frame_info p{
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 5%;
+    }
+
+    .photos_frame img{
+        width: 50%;
+    }
 }
-
-.frame_info p{
-    height: 48px;
-    width: 100px;
-    color: #F5F5F5;
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 5%;
-}
-
-.photos_frame img{
-    width: 50%;
-}
-
-
-
-
-
 
 footer{
     background-color: #F5F5F5;
-    
     display: flex;
     align-items: center;
 }

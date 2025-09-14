@@ -201,20 +201,30 @@ header{
     width: 50%;
 }
 
-
-
-
-
-
 footer{
     height: 15vh;
     background-color: #F5F5F5;
-    padding-top: 5%;
 }
-.contacts{
+
+/* Мобильный футер */
+@media (max-width: 980px){
+    footer{
+        height: 20vh;
+        align-content: center;
+        padding-left: 22.5%;
+    }
+
+    .contacts{
+        display: inline-block;
+    }
     
-    background-color: red;
+    .contacts div{
+        display: flex;
+        align-items: center;
+        gap: 5%
+    }
 }
+
 
 /* .contacts{
     display: grid;
@@ -244,12 +254,7 @@ footer{
         width: 0.9vh;
 }
  */
-/* Мобильный footer */
-/* @media (max-width: 980px){
-    footer{
-        height: 20vh;
-    }
-} */
+
 /* Десктопный footer */
 /* @media (min-width: 980px){
     footer{

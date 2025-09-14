@@ -149,7 +149,7 @@ header{
     .photos_grid{
         display: grid;
         grid-template-columns: auto;
-        row-gap: 15vh;
+        row-gap: 40px;
         justify-content: space-between;
     }
 
@@ -185,7 +185,7 @@ header{
     }
 }
 
-
+/* десктоп маленькое окно photos_section*/
 @media (min-width: 980px) and (max-width: 1560px){
     .photos_section{
         display: flex;

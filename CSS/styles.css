@@ -157,7 +157,7 @@ header{
     padding: 72px 50px;
 }
 
-/* .photos_grid{
+.photos_grid{
     display: grid;
     height: 1666.9811320752px;
     grid-template-columns: auto auto;
@@ -186,7 +186,7 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.27);
     backdrop-filter: blur(8.8px);
-} */
+}
 
 .frame_info p{
     height: 48px;
@@ -207,65 +207,35 @@ header{
 
 
 footer{
-    height: 15vh;
     background-color: #F5F5F5;
+    
+    display: flex;
+    align-items: center;
+}
+.contacts div{
+    display: flex;
+    align-items: center;
+    gap: 3%;
 }
 
 /* Мобильный футер */
 @media (max-width: 980px){
     footer{
-        display: flex;
         justify-content: center;
-        align-items: center;
-        height: 20vh;
+        height: 17vh;
     }
     .contacts{
         display: inline-flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .contacts div{
-        display: flex;
-        align-items: center;
-        gap: 4%;
-    }
 }
-
-
-/* .contacts{
-    display: grid;
-    align-content: space-between;
-    width: 9.25%;
-    height: 4.62vh ;
-    padding: 1.4vh;
-    font-size: 200%;
-}
-
-.contacts div{
-    display: flex;
-    align-items: center;
-}
-
-.contacts div img{
-    height: 10px;
-    width: 10px;
-}
-
-.contacts div p{
-    margin-left: 1.5px;
-}
-
-.contacts div img{
-        height: 0.9vh;
-        width: 0.9vh;
-}
- */
 
 /* Десктопный footer */
-/* @media (min-width: 980px){
+@media (min-width: 980px){
     footer{
-        height: 15vh;
+        height: 20vh;
+        padding-left: 2%;
     }
+}
 
-} */

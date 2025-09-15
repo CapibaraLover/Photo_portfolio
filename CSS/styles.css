@@ -139,6 +139,14 @@ header{
     padding: 5vw  4%;
 }
 
+.photos_frame{
+    transition: 0.5s;
+}
+
+.photos_frame:hover{
+    transform: scale(1.1);
+}
+
 /* мобильный photos_section */
 @media (max-width: 980px){
     .photos_section{

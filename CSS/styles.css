@@ -31,14 +31,6 @@ header{
     height: 40px;
 }
 
-
-
-
-
-
-
-
-
 .hello_section{
     position: relative;
     z-index: 1;
@@ -85,11 +77,6 @@ header{
     font-size: 24px;
     text-align: center;
 }
-
-
-
-
-
 
 .photos_section{
     height: auto;
@@ -140,9 +127,6 @@ header{
 .photos_frame img{
     width: 50%;
 }
-
-
-
 
 footer{
     display: flex;

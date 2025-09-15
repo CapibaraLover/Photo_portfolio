@@ -143,15 +143,15 @@ header{
     transition: 0.5s;
 }
 
-.photos_frame:hover{
-    transform: scale(1.1);
-}
-
 /* мобильный photos_section */
 @media (max-width: 980px){
     .photos_section{
         display: flex;
         justify-content: center;
+    }
+
+    .photos_frame:hover{
+        transform: scale(1.05);
     }
 
     .photos_grid{
@@ -198,6 +198,10 @@ header{
     .photos_section{
         display: flex;
         justify-content: center;
+    }
+
+    .photos_frame:hover{
+        transform: scale(1.1);
     }
 
     .photos_grid{
@@ -255,6 +259,10 @@ header{
         display: flex;
         position: relative;
         box-shadow: 0px 3.1vw 6vw rgba(0, 0, 0, 50%);
+    }
+
+    .photos_frame:hover{
+        transform: scale(1.1);
     }
 
     .frame_info{

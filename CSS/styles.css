@@ -46,6 +46,16 @@ header{
     }
 }
 
+/* десктоп header*/
+@media (min-width: 980px) {
+    header{
+        height: 7vw;
+        padding-left: 1.5%;
+        background-color: #F5F5F5;
+        box-shadow: 0px -8px 40.7px #000000;
+    }
+}
+
 .hello_section{
     position: relative;
     z-index: 1;
